@@ -5,7 +5,7 @@
 # "https://httpbin.org/status/300",
 # "https://httpbin.org/status/400",
 # "https://httpbin.org/status/500".
-#
+# 
 # Отчёт о тестировании генерируется в файл report.html посредством pytest-html
 # с аргументами конфигурации "--html=report.html --self-contained-html".
 
