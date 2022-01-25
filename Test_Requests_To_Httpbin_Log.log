@@ -1,3 +1,5 @@
+# Перезаписываемый лог GET запросов и их ответов.
+
 DEBUG - 25-Jan-22 23:38:27 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
 DEBUG - 25-Jan-22 23:38:28 - urllib3.connectionpool - https://httpbin.org:443 "GET /headers HTTP/1.1" 200 225
 INFO - 25-Jan-22 23:38:28 - urllib3 - <Response [200]>
