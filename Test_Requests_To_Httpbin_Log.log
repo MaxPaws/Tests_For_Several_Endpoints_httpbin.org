@@ -1,0 +1,16 @@
+DEBUG - 25-Jan-22 23:38:27 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
+DEBUG - 25-Jan-22 23:38:28 - urllib3.connectionpool - https://httpbin.org:443 "GET /headers HTTP/1.1" 200 225
+INFO - 25-Jan-22 23:38:28 - urllib3 - <Response [200]>
+INFO - 25-Jan-22 23:38:28 - urllib3 - {'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.27.1', 'X-Amzn-Trace-Id': 'Root=1-61f05fc4-46c1a79f75e6aac903194af6'}}
+DEBUG - 25-Jan-22 23:38:28 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
+DEBUG - 25-Jan-22 23:38:28 - urllib3.connectionpool - https://httpbin.org:443 "GET /status/200 HTTP/1.1" 200 0
+INFO - 25-Jan-22 23:38:28 - urllib3 - <Response [200]>
+DEBUG - 25-Jan-22 23:38:28 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
+DEBUG - 25-Jan-22 23:38:29 - urllib3.connectionpool - https://httpbin.org:443 "GET /status/300 HTTP/1.1" 300 0
+INFO - 25-Jan-22 23:38:29 - urllib3 - <Response [300]>
+DEBUG - 25-Jan-22 23:38:29 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
+DEBUG - 25-Jan-22 23:38:29 - urllib3.connectionpool - https://httpbin.org:443 "GET /status/400 HTTP/1.1" 400 0
+INFO - 25-Jan-22 23:38:29 - urllib3 - <Response [400]>
+DEBUG - 25-Jan-22 23:38:29 - urllib3.connectionpool - Starting new HTTPS connection (1): httpbin.org:443
+DEBUG - 25-Jan-22 23:38:30 - urllib3.connectionpool - https://httpbin.org:443 "GET /status/500 HTTP/1.1" 500 0
+INFO - 25-Jan-22 23:38:30 - urllib3 - <Response [500]>
