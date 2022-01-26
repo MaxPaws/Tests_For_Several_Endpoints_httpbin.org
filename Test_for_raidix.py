@@ -27,7 +27,7 @@ class TestHttpbinHeadersPage:
     # Тест на соответствие значения заголовка Server требуемой версии: gunicorn/19.9.0.
     def test_headers_check_server_equals_required(self):
         assert St.headers_page_response.headers["Server"] == "gunicorn/19.9.0", "Тип сервера не идентифицируется как " \
-                                                                                "требеумый: gunicorn/19.9.0"
+                                                                                "требеумый: 'gunicorn/19.9.0'."
 
     # Тест на соответствие значения Host в теле headers значению "httpbin.org".
     def test_headers_check_host_equals_httpbin_org(self):
@@ -36,15 +36,17 @@ class TestHttpbinHeadersPage:
 
     # Тест на соответствие значения Accept в теле headers значению "*/*".
     def test_headers_check_accept_equals_required(self):
-        assert St.headers_page_response_body["headers"]["Accept"] == "*/*"
+        assert St.headers_page_response_body["headers"]["Accept"] == "*/*", "Значение Accept не соответствует '*/*'."
 
     # Тест на соответствие значения Accept-Encoding в теле headers значению "gzip, deflate".
     def test_headers_check_accept_encoding_equals_gzip_deflate(self):
-        assert St.headers_page_response_body["headers"]["Accept-Encoding"] == "gzip, deflate"
+        assert St.headers_page_response_body["headers"]["Accept-Encoding"] == "gzip, deflate", "Значение Accept-Encoding " \
+                                                                              "не соответствует 'gzip, deflate'."
 
     # Тест на соответствие значения User-Agent в теле headers значению "python-requests/2.27.1".
     def test_headers_check_user_agent_equals_python_requests(self):
-        assert St.headers_page_response_body["headers"]["User-Agent"] == "python-requests/2.27.1"
+        assert St.headers_page_response_body["headers"]["User-Agent"] == "python-requests/2.27.1", "Значение User-Agent " \
+                                                                         "не соответствует 'python-requests/2.27.1'."
 
 
 # Класс с тестами для эндпоинтов "https://httpbin.org/status/статус_код".
